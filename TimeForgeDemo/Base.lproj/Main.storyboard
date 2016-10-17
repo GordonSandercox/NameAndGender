@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter in a Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4L-xJ-0Bf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AHU-oU-E5d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter in a Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-rH-CzE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VwG-hy-CNC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter a Name and Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wK-CP-lUM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG7-DO-she">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="Kem-cM-HC2"/>
+                                </constraints>
+                                <state key="normal" title="Scramble It">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectScrambleIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm6-V7-ivS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z4L-xJ-0Bf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0aD-vj-Xgr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gG7-DO-she" secondAttribute="bottom" constant="10" id="23c-Ka-4eB"/>
+                            <constraint firstItem="WNc-rH-CzE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lgk-FR-UCL"/>
+                            <constraint firstItem="8wK-CP-lUM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ol7-Xh-QrL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Z4L-xJ-0Bf" secondAttribute="leading" id="Swr-CK-M5W"/>
+                            <constraint firstItem="Z4L-xJ-0Bf" firstAttribute="top" secondItem="8wK-CP-lUM" secondAttribute="bottom" constant="47" id="iOS-Ly-OSV"/>
+                            <constraint firstItem="gG7-DO-she" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="ibW-GW-kpG"/>
+                            <constraint firstItem="gG7-DO-she" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrU-66-25K"/>
+                            <constraint firstItem="8wK-CP-lUM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="nSI-K2-gPi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WNc-rH-CzE" secondAttribute="leading" id="rst-rV-Qb0"/>
+                            <constraint firstItem="WNc-rH-CzE" firstAttribute="top" secondItem="Z4L-xJ-0Bf" secondAttribute="bottom" constant="42" id="t46-c4-cqg"/>
+                            <constraint firstItem="gG7-DO-she" firstAttribute="top" secondItem="WNc-rH-CzE" secondAttribute="bottom" constant="110" id="ybV-75-mgb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GenderField" destination="WNc-rH-CzE" id="K83-Wa-aio"/>
+                        <outlet property="NameField" destination="Z4L-xJ-0Bf" id="sVm-BF-ZDm"/>
+                        <outlet property="ScrambleButton" destination="gG7-DO-she" id="Rbj-A0-0HJ"/>
+                        <segue destination="FKg-37-2XL" kind="show" identifier="SegueToScrambledViewController" id="XsH-x3-pIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Scrambled View Controller-->
+        <scene sceneID="bLV-Fw-Omc">
+            <objects>
+                <viewController id="FKg-37-2XL" customClass="ScrambledViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTt-yz-2Ed"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Vx-yu-7xX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S0d-Cf-zHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-id-VfS">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-Ld-Hse">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FZL-id-VfS" firstAttribute="top" secondItem="iTt-yz-2Ed" secondAttribute="bottom" constant="125" id="2qH-lS-oHh"/>
+                            <constraint firstItem="9a9-Ld-Hse" firstAttribute="top" secondItem="FZL-id-VfS" secondAttribute="bottom" constant="53" id="Ca9-j3-Slr"/>
+                            <constraint firstItem="FZL-id-VfS" firstAttribute="centerX" secondItem="S0d-Cf-zHF" secondAttribute="centerX" id="jze-5e-eza"/>
+                            <constraint firstItem="9Vx-yu-7xX" firstAttribute="top" secondItem="9a9-Ld-Hse" secondAttribute="bottom" constant="427" id="mio-tM-erF"/>
+                            <constraint firstItem="9a9-Ld-Hse" firstAttribute="centerX" secondItem="S0d-Cf-zHF" secondAttribute="centerX" id="ocj-eJ-mEV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NewGenderLabel" destination="9a9-Ld-Hse" id="wdo-wD-wUH"/>
+                        <outlet property="NewNameLabel" destination="FZL-id-VfS" id="sFf-79-XKr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fD2-Fh-tcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
